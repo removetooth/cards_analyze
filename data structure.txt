@@ -1,0 +1,39 @@
+games = {
+    389532323751657499:
+    {
+        "host":266389941423046657,
+        "czar":0,
+        "card":53,
+        "pick_no":2,
+        "pile":[
+            {
+                "ids":[152,16]
+                "played_by":266389941423046657
+            }   
+        ],
+        "discard_w":[124, 46, 30, 64],
+        "discard_b":[12, 20],
+        "last_active":1629264816,
+        "players":{
+            317045008513630208:{
+                "hand":[74, 101, 160, 144, 21, 98, 179],
+                "score":2
+            },
+            266389941423046657:{
+                "hand":[177, 87, 190, 63, 154, 166, 122],
+                "score":1
+            }
+        },
+        "custom_decks":[0, 3]
+    }
+}
+
+user = {
+    "custom_decks":[
+        {
+            "name":"Test Deck",
+            "cards_w":["White Card 1", "White Card 2"],
+            "cards_b":["Black Card 1", "Black Card 2"]
+            }
+        ]
+    }
