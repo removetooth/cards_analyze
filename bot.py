@@ -84,7 +84,12 @@ async def on_message(message):
                 decks = applyCustomDecks(game)
                 winner = await client.fetch_user(game['pile'][selection-1]['played_by'])
                 game['players'][winner.id]['score'] += 1
-                await message.channel.send(winner.mention + " got the point! (Total score: " + str(game['players'][winner.id]['score']) + ")")
+                leaderboard = discord.Embed(
+                    title="Leaderboard",
+                    description = '\n'.join(["<@" + str(i) + ">: " + str(game['players'][i]['score']) for i in game['players']]),
+                    color=0xFFFFFF
+                    )
+                await message.channel.send(winner.mention + " got the point! (Total score: " + str(game['players'][winner.id]['score']) + ")", embed=leaderboard)
                 if game['players'][winner.id]['score'] >= 7:
                     await message.channel.send(winner.mention + " **wins the game!**")
                     games.pop(message.channel.id)
