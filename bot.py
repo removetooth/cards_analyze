@@ -1,3 +1,17 @@
+# NOTE 2/20/2023
+
+# OKAY, WELL, THAT WAS A DUMB BLUNDER.
+# The INSTANT I made this repository public- because I thought, yknow, why not-
+# Discord messaged me saying that my token had been posted to the Internet.
+# How incredibly impressive that is aside, I may have just given myself a heart attack.
+# They said it had been automatically reset, so the one that got posted here doesn't
+# work anymore, thank god.
+
+# Looking back on this file, it's just........ hellish to read.
+# This was one of the first repositories I ever put on Github. Has it really been 2 years?
+# I don't know if I should really have this public after all,
+# but it's better to be open about my projects, I think...?
+
 import discord, ast, random, time, itertools
 
 intents = discord.Intents.default()
@@ -288,7 +302,6 @@ async def on_reaction_add(reaction, user):
                 await user.send("You've already played!")
                 
                 
-            
-        
-            
-client.run('ODc3Mzg5NTkyNTE1NDU3MDU0.YRx6uw.9pKF7Tj0izMKPgC4Rq7_5CDLwxk')
+# Put your token here. Don't be stupid like me and post it to the Internet, either.
+
+client.run('jfasdjkfdhasjk')
